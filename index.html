@@ -1,0 +1,665 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Danrenz Kier | Resume</title>
+  <script src="design/cdn.tailwindcss.com.html"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="design/cdnjs.cloudflare.com.html"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+    /* Transition for collapsible content */
+    .collapsible-content {
+      transition: max-height 0.3s ease;
+      overflow: hidden;
+    }
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .dot.active {
+      background-color: #4A90E2;
+    }
+    .slide {
+      display: none;
+    }
+    .slide.active-slide {
+      display: block;
+    }
+
+    /*icon */
+        .icon {
+      color: black; /* Default color */
+      transition: color 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .icon:hover {
+      transform: scale(1.1); /* Slight zoom effect */
+    }
+
+    /* Hover colors for different icons */
+    .messenger:hover {
+      color: #0084ff; /* Messenger Blue */
+    }
+
+    .gmail:hover {
+      color: #d44638; /* Gmail Red */
+    }
+
+    .viber:hover {
+      color: #6658cd; /* Viber Purple */
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+  <div class="max-w-4xl mx-auto p-6 sm:p-10 bg-white shadow-lg rounded-lg mt-10 mb-10 flex-grow w-full">
+   <header
+     class="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-gray-300 pb-6 mb-6"
+   >
+    <div class="flex items-center space-x-6">
+     <img
+       alt="Professional headshot of a Danrenz Kier Extra"
+       class="w-28 h-28 rounded-full object-cover shadow-sm"
+       height="120"
+       src="images/profile_pic.png"
+       width="120"
+     />
+     <div>
+      <h1 class="text-3xl font-bold text-gray-900">Danrenz Kier M. Extra</h1>
+      <p class="text-gray-600 mt-1 text-lg">Planning Assistant</p>
+      <p class="text-gray-500 mt-1 text-sm">
+       Sariaya, Quezon
+      </p>
+      <p class="text-gray-500 mt-1 text-sm">
+       <a href="mailto:extradanrenz@gmail.com" target="blank"> extradanrenz@gmail.com </a> | (0905) 521-5742 |
+        <a  href="https://m.me/danrenzkiermanaloextra" target="_blank">
+        <i class="fab fa-facebook-messenger icon messenger fa-lg"></i>
+      </a>|
+      <a  href="viber://chat?number=+639055215742" target="_blank">
+        <i class="fab fa-viber icon viber fa-lg"></i>
+      </a>
+      </p>
+     </div>
+    </div>
+   </header>
+   <section class="mb-10">
+    <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2 mb-4">
+     Profile
+    </h2>
+    <p class="text-gray-700 leading-relaxed" style="text-align: justify; text-indent: 2em;">
+    Detail-oriented and analytical professional with five years of experience in the local government, specializing in infrastructure data management, reporting, and multi-agency coordination. Proven ability to manage large datasets, generate technical reports, create thematic maps, and support digital documentation processes. Strong background in planning support, stakeholder communication, and project monitoring.
+    </p>
+    <p class="text-gray-700 leading-relaxed" style="text-align: justify; text-indent: 2em;">
+     Currently seeking career growth opportunities where I can further develop my planning and analytical skills, with a strong interest in roles involving data analysis and systems support. Eager to apply my technical, and problem-solving abilities in a fast-paced, innovation-driven environment. <a href="#" id="openModal1" class="text-blue-600 underline hover:text-blue-800"><img src="images/info.jpg" height="15"  width="15" alt="info" class="inline-block"></a>
+    </p>
+
+   </section>
+
+   <section class="mb-10">
+    <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2 mb-4">
+     Skills
+    </h2>
+    <ul class="list-disc pl-6 space-y-3 space-y-1">
+    <p class="text-gray-700 leading-relaxed">
+      <li> Proficient in Microsoft Office Suite, with advanced expertise in Microsoft Excel also highly skilled in Google Workspace, including Google Sheets; </li>
+      <li> Experienced in using ArcMap for creating diverse maps, including thematic maps, spatial maps, and geospatial visualizations; </li>
+              <li > Skilled in using Adobe Photoshop for various tasks, including photo editing, image manipulation and graphic design.
+                  <a href="#" id="openModal2" class="text-blue-600 underline hover:text-blue-800"><img src="images/info.jpg" height="15"  width="15" alt="info" class="inline-block"></a>
+              </li>
+ 
+        
+
+      <li> Knowledgeable in computer hardware, software and operating system to optimize technology benefits.</li>
+    </p>
+    </ul>
+   </section>
+
+
+   <section class="mb-10">
+    <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2 mb-6">
+     Work Experience
+    </h2>
+
+    <article class="mb-8 border border-gray-300 rounded-lg shadow-sm">
+     <button
+       type="button"
+       aria-expanded="false"
+       aria-controls="work1-details"
+       class="w-full flex justify-between items-center px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-600 hover:bg-gray-100 transition"
+       id="work1-btn"
+     >
+      <div class="flex items-center space-x-4">
+       <div>
+        <h3 class="text-xl font-semibold text-gray-900 text-left">Local Govenment Unit of Sariaya</h3>
+         <h3 class="text-l text-gray-900 text-left">Planning Assistant |
+		<span class="text-l text-gray-600 italic ml-2">January 2021 - Present</span>
+	</h3>
+         <h3 class="text-l text-gray-900 text-left">IT Staff |
+		<span class="text-l text-gray-600 italic ml-2">August 2020 - December 2020</span>
+	</h3>
+       </div>
+      </div>
+      <i
+        class="fas fa-chevron-down text-gray-600 transition-transform duration-300"
+        aria-hidden="true"
+      ></i>
+     </button>
+     <div
+       id="work1-details"
+       class="px-6 pb-6 max-h-0 collapsible-content overflow-hidden"
+       aria-labelledby="work1-btn"
+       hidden
+     >
+      <p class="text-gray-700 font-medium mb-1 font-semibold">Planning Assistant</p>
+      <ul class="list-disc pl-6 space-y-3 text-gray-700 space-y-1">
+
+      <li > Assisting and consolidating data, reports and documents from different agencies and stakeholders for decision-making and planning purposes as the Sectoral Coordinator of Infrastructure Sector;<a href="#" id="openModal3" class="text-blue-600 underline hover:text-blue-800"><img src="images/info.jpg" height="15"  width="15" alt="info" class="inline-block"></a></li>
+       <li>
+       Designing cover pages for a book of the Local Government Unit (LGU) plans, official office announcements and infographics;
+      <a href="#" id="openModal4" class="text-blue-600 underline hover:text-blue-800"><img src="images/info.jpg" height="15"  width="15" alt="info" class="inline-block"></a>
+       </li>
+       <li>
+        Updating the inventory of infrastructure facilities including road networks and bridges, to support effective planning and decision-making. This also includes cell sites, water sources (spring, deep and shallow wells), government buildings such as multi-purpose buildings, barangay halls, health centers, institutional facilities such as schools and other structures like churches, hospitals, subdivisions and cemeteries;
+      <a href="#" id="openModal5" class="text-blue-600 underline hover:text-blue-800"><img src="images/info.jpg" height="15"  width="15" alt="info" class="inline-block"></a>
+
+       </li>
+       <li>
+        Securing Deeds of Donation for LGU-implemented projects as part of the project's requirements.
+       </li>
+       <li>
+        Identifying land classification and assisting clients on issuance of Locational Clearance.
+       </li>
+       <li>
+        Assessing disaster areas to identify damage and needs, supporting emergency response and recovery planning as Rapid Damage Assessment Need Analysis (RDANA) Team Member;
+      <a href="#" id="openModal6" class="text-blue-600 underline hover:text-blue-800"><img src="images/info.jpg" height="15"  width="15" alt="info" class="inline-block"></a>
+       </li>
+       <li>
+       Monitoring, documenting and reporting of all activities and operations related to the protection and preservation of environment and natural resources as part of Task Force Kalikasan Member;
+      <a href="#" id="openModal7" class="text-blue-600 underline hover:text-blue-800"><img src="images/info.jpg" height="15"  width="15" alt="info" class="inline-block"></a>
+       </li>
+       <li>
+       Generating thematic maps to effectively visualize and represent strategic plans for the Local Government Unit;
+       </li>
+       <li>
+       Serving as a member of the Technical Working Group of the Project Monitoring Committee to ensure that all projects are aligned with the 20% Development Fund guidelines issued by the DILG.
+      <a href="#" id="openModal8" class="text-blue-600 underline hover:text-blue-800"><img src="images/info.jpg" height="15"  width="15" alt="info" class="inline-block"></a>
+       </li>
+      </ul><br>
+      <p class="text-gray-700 font-medium mb-1 font-semibold">IT Staff</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+       <li>
+       Diagnosing and resolving hardware failures or malfunctions in computers, printers, scanners and alike; 
+       </li>
+       <li>
+        Configuring and troubleshooting network devices, including routers and network printers;
+       </li>
+       <li>
+       Installing and configuring software applications, operating systems, and utilities on computers.
+       </li>
+      </ul>
+
+     </div>
+    </article>
+
+    <article class="mb-8 border border-gray-300 rounded-lg shadow-sm">
+     <div
+       class="w-full flex justify-between items-center px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
+     >
+      <div class="flex items-center space-x-4">
+       <div>
+        <h3 class="text-xl font-semibold text-gray-900 text-left">Vanjer and Flowel Smoke Emission Testing Center</h3>
+         <h3 class="text-l text-gray-900 text-left">Office Staff |
+    <span class="text-l text-gray-600 italic ml-2">January 2019 - December 2019</span>
+  </h3>
+       </div>
+      </div>
+     </div>
+    </article>
+
+    <article class="mb-8 border border-gray-300 rounded-lg shadow-sm">
+     <div
+       class="w-full flex justify-between items-center px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
+     >
+      <div class="flex items-center space-x-4">
+       <div>
+        <h3 class="text-xl font-semibold text-gray-900 text-left">Philippine Long Distance Telephone (PLDT) Inc.</h3>
+        <h3 class="text-l text-gray-900 text-left">On-the-Job Training - Customer Service Operation Zone  </h3>
+        <h3 class="text-l text-gray-600  ml">Technical Support, Main Distribution Frame Assistant</span> |
+        <span class="text-l text-gray-600 italic ml">April 2017 - July 2017</span>
+  </h3>
+       </div>
+      </div>
+     </div>
+    </article>
+
+   </section>
+   <section class="mb-10">
+    <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2 mb-6">
+     Education
+    </h2>
+    <div class="space-y-6">
+     <div>
+      <h3 class="text-xl font-semibold text-gray-900">
+       Bachelor of Science in Information Technology
+      <a href="#" id="openModal9" class="text-blue-600 underline hover:text-blue-800"><img src="images/info.jpg" height="15"  width="15" alt="info" class="inline-block"></a>
+      </h3>
+      <p class="text-gray-700 bold">Pamantasan ng Lunsod ng San Pablo</p>
+      <p class="text-gray-600">May 2018</p>
+     </div>
+
+     <div>
+      <h3 class="text-xl font-semibold text-gray-900">
+       Canda National High School
+      </h3>
+      <p class="text-gray-700">Sariaya, Quezon</p>
+      <p class="text-gray-600">2014</p>
+     </div>
+
+     <div>
+      <h3 class="text-xl font-semibold text-gray-900">
+       Castañas Elementary School
+      </h3>
+      <p class="text-gray-700">Sariaya, Quezon</p>
+      <p class="text-gray-600">2010</p>
+     </div>
+
+
+    </div>
+   </section>
+   <section class="mb-10">
+    <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2 mb-6">
+     Personal Data
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
+     <div>
+       <p>
+       <span class="font-semibold">Nickname:</span> Dan
+       </p>
+       <p>
+       <span class="font-semibold">Date of Birth:</span> August 22, 1997
+       </p>
+       <p>
+       <span class="font-semibold">Sex:</span> Male
+       </p>
+       <p>
+       <span class="font-semibold">Height:</span> 163cm
+       </p>
+       <p>
+       <span class="font-semibold">Marital Status:</span> Single
+       </p>
+       <p>
+       <span class="font-semibold">Religion:</span> Iglesia Ni Cristo
+       </p>
+       <p>
+       <span class="font-semibold">Blood Type:</span> O<sup>+</sup>
+       </p>
+     </div>
+       <div>
+       <p>
+       <span class="font-semibold">Driver License No.:</span> D09-24-007***
+       </p>
+       <p>
+       <span class="font-semibold">SSS:</span> 04-4169***-1
+       </p>
+       <p>
+       <span class="font-semibold">Pag-IBIG:</span> 1212-723*-8**6
+       </p>
+       <p>
+       <span class="font-semibold">TIN:</span> 768-217-***-0000
+       </p>
+       <p>
+       <span class="font-semibold">PhilHealth:</span> 08-252749***-8
+       </p>
+
+    </div>
+    </div>
+   </section>
+   <section>
+    <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2 mb-6">
+     Character Reference
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+     <div class="flex items-center space-x-4">
+      <img
+        class="w-20 h-20 rounded-full object-cover shadow-md"
+        height="80"
+        src="images/char_ref1.jpg"
+        width="80"
+      />
+      <div>
+       <p class="font-semibold text-gray-900">Engr. Victor M. Alviso</p>
+       <p class="text-gray-600 bold">Municipal Engineer </p>
+       <p class="text-gray-600">Local Government of Sariaya </p>
+       <p class="text-gray-600">0918-297-7137 </p>
+      </div>
+     </div>
+     <div class="flex items-center space-x-4">
+      <img
+        class="w-20 h-20 rounded-full object-cover shadow-md"
+        height="80"
+        src="images/char_ref2.jpg"
+        width="80"
+      />
+      <div>
+       <p class="font-semibold text-gray-900">Ms. Beah Liezl A. Marasigan</p>
+       <p class="text-gray-600 bold"> Project Development Officer II </p>
+       <p class="text-gray-600"> DSWD Field Office IV-A </p>
+       <p class="text-gray-600">0929-249-2466 </p>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+
+
+
+<!-- Modal1 Design-->
+<div id="popupModal1" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="modalContent bg-white rounded-lg shadow-lg max-w-md w-full p-4 relative">
+    <button class="closeModal absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+    <h2 class="text-xl font-semibold mb-4 text-center">Certificates</h2>
+    <div class="slideContainer relative w-full overflow-hidden touch-pan-x">
+  <!-- Slides -->
+      <div class="slide active-slide"><img src="images/certificate/1cert_healthawareness.jpg" alt="Mental Health" class="w-full rounded shadow"></div>
+      <div class="slide"><img src="images/certificate/2cert_clup-zo.jpg" alt="CLUP-ZO" class="w-full rounded shadow"></div>
+      <div class="slide"><img src="images/certificate/3cert_drug.jpg" alt="Drug Awereness" class="w-full rounded shadow"></div>
+      <div class="slide"><img src="images/certificate/cert_dti.jpg" alt="DTI" class="w-full rounded shadow"></div>
+      <div class="slide"><img src="images/certificate/cert_sepp.jpg" alt="SEPP" class="w-full rounded shadow"></div>
+      
+
+      <button class="prevBtn absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2">&lt;</button>
+      <button class="nextBtn absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2">&gt;</button>
+    </div>
+    <div class="dotContainer flex justify-center mt-4"></div>
+    <p class="text-sm text-gray-600 mt-3 text-center"></p>
+  </div>
+</div>
+
+<!-- Modal2 Design-->
+<div id="popupModal2" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="modalContent bg-white rounded-lg shadow-lg max-w-md w-full p-4 relative">
+    <button class="closeModal absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+    <h2 class="text-xl font-semibold mb-4 text-center">Cover Pages for Plans and Other Designs</h2>
+    <div class="slideContainer relative w-full overflow-hidden touch-pan-x">
+  <!-- Slides -->
+      <div class="slide active-slide"><img src="images/cover_page/1.png" alt="DTP" class="w-full rounded shadow"></div>
+      <div class="slide"><img src="images/cover_page/2.png" alt="LSP" class="w-full rounded shadow"></div>
+      <div class="slide"><img src="images/cover_page/3.png" alt="PRDP2" class="w-full rounded shadow"></div>
+      <div class="slide"><img src="images/cover_page/4.png" alt="LPTRP" class="w-full rounded shadow"></div>
+      <div class="slide"><img src="images/cover_page/5.png" alt="SATCF" class="w-full rounded shadow"></div>
+      <div class="slide"><img src="images/cover_page/6.png" alt="BDP1" class="w-full rounded shadow"></div>
+      <div class="slide"><img src="images/cover_page/7.png" alt="BDP2" class="w-full rounded shadow"></div>
+      <div class="slide"><img src="images/cover_page/8.png" alt="BDP3" class="w-full rounded shadow"></div>
+      <div class="slide"><img src="images/cover_page/9.png" alt="ELA" class="w-full rounded shadow"></div>
+      <div class="slide text-center" ><img src="images/cover_page/10.png" alt="info" class="w-full rounded shadow">Info Graphics Entry of Sariaya</div>
+      
+
+      <button class="prevBtn absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2">&lt;</button>
+      <button class="nextBtn absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2">&gt;</button>
+    </div>
+    <div class="dotContainer flex justify-center mt-4"></div>
+    <p class="text-sm text-gray-600 mt-3 text-center"></p>
+  </div>
+</div>
+
+
+<!-- Modal3 OPDS-->
+<div id="popupModal3" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="modalContent bg-white rounded-lg shadow-lg max-w-md w-full p-4 relative">
+    <button class="closeModal absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+    <h2 class="font-semibold mb-4 text-center">Certificates</h2>
+    <div class="slideContainer relative w-full overflow-hidden touch-pan-x">
+  <!-- Slides -->
+      <div class="slide active-slide text-center text-sm"><img src="images/certificate/cert_opds.jpg" alt="opds" class="w-full rounded shadow">OPDS-LRS_TRBIS_0622_B15_075</div>
+      <div class="slide text-center text-sm"><img src="images/certificate/5cert_multisectoral.jpg" alt="Multi-Sectoral" class="w-full rounded shadow"></div>
+      <div class="slide text-center text-sm"><img src="images/certificate/cert_ppp.jpg" alt="PPP" class="w-full rounded shadow"></div>
+
+      <button class="prevBtn absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2">&lt;</button>
+      <button class="nextBtn absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2">&gt;</button>
+    </div>
+    <div class="dotContainer flex justify-center mt-4"></div>
+    <p class="text-sm text-gray-600 mt-3 text-center"></p>
+  </div>
+</div>
+
+
+<!-- Modal4 OpenUniversity-->
+<div id="popupModal4" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="modalContent bg-white rounded-lg shadow-lg max-w-md w-full p-4 relative">
+    <button class="closeModal absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+    <h2 class="font-semibold mb-4 text-center">Certificate</h2>
+    <div class="slideContainer relative w-full overflow-hidden touch-pan-x">
+  <!-- Slides -->
+      <div class="slide active-slide text-center text-sm"><img src="images/certificate/mmprod4_feb2025.png" alt="mmprod4_feb2025" class="w-full rounded shadow"></div>
+
+      <button class="prevBtn nextBtn"></button>
+
+    </div>
+    <p class="text-sm text-gray-600 mt-3 text-center">model.upou.edu.ph/completers/mmprod4_feb2025 </p>
+  </div>
+</div>
+
+
+<!-- Modal5 RDANA-->
+<div id="popupModal5" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="modalContent bg-white rounded-lg shadow-lg max-w-md w-full p-4 relative">
+    <button class="closeModal absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+    <h2 class="font-semibold mb-4 text-center">Certificate</h2>
+    <div class="slideContainer relative w-full overflow-hidden touch-pan-x">
+  <!-- Slides -->
+      <div class="slide active-slide text-center text-sm"><img src="images/certificate/4cert_LRMPA.jpg" alt="LRMPA" class="w-full rounded shadow"></div>
+      <div class="slide text-center text-sm"><img src="images/certificate/psrti.png" alt="psrti" class="w-full rounded shadow"></div>
+
+      <button class="prevBtn absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2">&lt;</button>
+      <button class="nextBtn absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2">&gt;</button>
+    </div>
+    <div class="dotContainer flex justify-center mt-4"></div>
+    <p class="text-sm text-gray-600 mt-3 text-center"></p>
+  </div>
+</div>
+
+<!-- Modal6 RDANA-->
+<div id="popupModal6" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="modalContent bg-white rounded-lg shadow-lg max-w-md w-full p-4 relative">
+    <button class="closeModal absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+    <h2 class="font-semibold mb-4 text-center">Certificate</h2>
+    <div class="slideContainer relative w-full overflow-hidden touch-pan-x">
+  <!-- Slides -->
+      <div class="slide active-slide text-center text-sm"><img src="images/certificate/cert_RDANA.png" alt="RDANA" class="w-full rounded shadow"></div>
+
+      <button class="prevBtn nextBtn"></button>
+
+    </div>
+    <p class="text-sm text-gray-600 mt-3 text-center"> RDANA-OCD CALABARZON-5-2023-14 </p>
+  </div>
+</div>
+
+<!-- Modal7 TaskForce-->
+<div id="popupModal7" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="modalContent bg-white rounded-lg shadow-lg max-w-md w-full p-4 relative">
+    <button class="closeModal absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+    <h2 class="font-semibold mb-4 text-center">Certificates</h2>
+    <div class="slideContainer relative w-full overflow-hidden touch-pan-x">
+  <!-- Slides -->
+      <div class="slide active-slide text-center text-sm"><img src="images/certificate/cert_deputy.jpg" alt="R4A-2024-C-143" class="w-full rounded shadow"></div>
+      <div class="slide text-center text-sm"><img src="images/certificate/cert_deputy1.jpg" alt="Deputy" class="w-full rounded shadow"></div>
+
+      <button class="prevBtn absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2">&lt;</button>
+      <button class="nextBtn absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2">&gt;</button>
+    </div>
+    <div class="dotContainer flex justify-center mt-4"></div>
+    <p class="text-sm text-gray-600 mt-3 text-center"></p>
+  </div>
+</div>
+
+<!-- Modal8 PMC-->
+<div id="popupModal8" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="modalContent bg-white rounded-lg shadow-lg max-w-md w-full p-4 relative">
+    <button class="closeModal absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+    <h2 class="font-semibold mb-4 text-center">Certificate</h2>
+    <div class="slideContainer relative w-full overflow-hidden touch-pan-x">
+  <!-- Slides -->
+      <div class="slide active-slide text-center text-sm"><img src="images/certificate/cert_pmc.jpg" alt="PMC" class="w-full rounded shadow"></div>
+
+      <button class="prevBtn nextBtn"></button>
+
+    </div>
+    <p class="text-sm text-gray-600 mt-3 text-center"></p>
+  </div>
+</div>
+
+<!-- Modal9 School -->
+<div id="popupModal9" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="modalContent bg-white rounded-lg shadow-lg max-w-md w-full p-4 relative">
+    <button class="closeModal absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+    <h2 class="font-semibold mb-4 text-center">Bachelor of Science in Information Technology</h2>
+    <div class="slideContainer relative w-full overflow-hidden touch-pan-x">
+  <!-- Slides -->
+      <div class="slide active-slide text-center text-sm"><img src="images/school/blurred_diploma.png" alt="diploma" class="w-full rounded shadow">S.O. No. 50-464108-0276 s.2018 </div>
+      <div class="slide text-center text-sm"><img src="images/school/blurred_TOR1.png" alt="Transcript of Record" class="w-full rounded shadow">Transcript of Record | Page 1 of 2</div>
+      <div class="slide text-center text-sm"><img src="images/school/blurred_TOR2.png" alt="Transcript of Record" class="w-full rounded shadow">Transcript of Record | Page 2 of 2</div>
+
+      <button class="prevBtn absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2">&lt;</button>
+      <button class="nextBtn absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2">&gt;</button>
+    </div>
+    <div class="dotContainer flex justify-center mt-4"></div>
+    <p class="text-sm text-gray-600 mt-3 text-center"></p>
+  </div>
+</div>
+
+
+
+
+
+  <footer class="bg-gray-100 border-t border-gray-300 py-6 mt-auto">
+   <div class="max-w-4xl mx-auto text-center text-gray-600 text-sm">
+    &copy; 2025 Danrenz Kier Extra. All rights reserved.
+   </div>
+  </footer>
+
+<script>
+    // Toggle collapsible work experience details
+    document.querySelectorAll("section.mb-10 article button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        const contentId = btn.getAttribute("aria-controls");
+        const content = document.getElementById(contentId);
+        const icon = btn.querySelector("i.fas.fa-chevron-down");
+
+        if (expanded) {
+          btn.setAttribute("aria-expanded", "false");
+          content.style.maxHeight = null;
+          content.hidden = true;
+          if (icon) icon.style.transform = "rotate(0deg)";
+        } else {
+          btn.setAttribute("aria-expanded", "true");
+          content.hidden = false;
+          content.style.maxHeight = content.scrollHeight + "px";
+          if (icon) icon.style.transform = "rotate(180deg)";
+        }
+      });
+    });
+
+
+  document.querySelectorAll('[id^="openModal"]').forEach((openBtn, i) => {
+    const index = i + 1;
+    const modal = document.getElementById(`popupModal${index}`);
+    const modalContent = modal.querySelector('.modalContent');
+    const closeBtn = modal.querySelector('.closeModal');
+    const slideContainer = modal.querySelector('.slideContainer');
+    const slides = modal.querySelectorAll('.slide');
+    const nextBtn = modal.querySelector('.nextBtn');
+    const prevBtn = modal.querySelector('.prevBtn');
+    const dotContainer = modal.querySelector('.dotContainer');
+
+    let currentIndex = 0;
+    let dots = [];
+
+    const showSlide = (idx) => {
+      slides.forEach((slide, j) => slide.classList.toggle("active-slide", j === idx));
+      dots.forEach((dot, j) => dot.classList.toggle("active", j === idx));
+    };
+
+    const createDots = () => {
+      dotContainer.innerHTML = "";
+      dots = [];
+      slides.forEach((_, j) => {
+        const dot = document.createElement("span");
+        dot.classList.add("dot");
+        if (j === currentIndex) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+          currentIndex = j;
+          showSlide(currentIndex);
+        });
+        dotContainer.appendChild(dot);
+        dots.push(dot);
+      });
+    };
+
+    openBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      currentIndex = 0;
+      createDots();
+      showSlide(currentIndex);
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      }
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    // Touch Swipe
+    let startX = 0;
+    slideContainer.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+    slideContainer.addEventListener("touchend", (e) => {
+      const diffX = e.changedTouches[0].clientX - startX;
+      if (diffX > 50) {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+      } else if (diffX < -50) {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }
+    });
+  });
+</script>
+
+ </body>
+</html>
